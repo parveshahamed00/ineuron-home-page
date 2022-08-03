@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+/* navbar */
+.navbar{
+    background-color:#8E05C2 ;
+}
+.navbar .navbar-toggler{
+    border: 1.3px solid #371B58;
+}
+.navbar .logo{
+    text-align: center;
+    width: 8%;
+}
+
+.nav-input{
+position: relative;
+}
+.nav-input i{
+    position: absolute;
+    right: 13%;
+    top: 20%;
+}
+.nav-button{
+    margin: 0 10px;
+}
+
+.navbar ul .nav-link{
+letter-spacing: -.3px;
+    color: #ECFCFF;
+font-family:Arial, Helvetica, sans-serif;
+}
+.navbar .nav-sign-in{
+    background-color:#700B97 ;
+    color: #ffffff;
+}
+.navbar .nav-sign-up{
+    color: #ffffff;
+    border: 1px solid snow;
+}
+.nav-sign-up:hover{
+    background-color: #700B97;
+}
+/* intro */
+
+#intro,#numbers-enrolled,#hall-of-fame,#avengers{
+    background-color: #700B97;
+    color: #ffffff;
+}
+#intro h1{
+
+    font-size: 4em;
+    line-height: 1.2;
+    margin-bottom: 5%;
+}
+#intro hr{
+    width:20%;
+    border: 0;
+    border-bottom: 3px solid ;
+}
+#intro .intro-right{
+    padding-top:3% ;
+    padding-left: 5%;
+}
+#intro p{
+    margin-top: 2%;
+    /* font-weight: 400; */
+    color:aliceblue;
+}
+/* #who-we-are  */
+#who-we-are p{
+    padding-top: 5%;
+    text-align: left;
+}
+#who-we-are h1{
+
+    font-size: 3em;
+}
+#who-we-are p{
+    font-size: 20px;
+}
+.who-we-are-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* numbers-enrolled */
+#numbers-enrolled h1{
+    top: 10px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    color:black;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    font-size: 2em;
+}
+.numbers-enrolled-top-wave{
+    top: 0;
+    position: absolute;
+}
+
+#numbers-enrolled .card-text{
+    text-align: center;
+    color:#3E065F;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#numbers-enrolled .center-card{
+    display: flex;
+    justify-content: center;
+    
+}
+#numbers-enrolled .total-students{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* achievers */
+#achievers{
+    padding: 0 4%;
+}
+#achievers button{
+    margin-top: 3%;
+    float: right;
+}
+/* courses */
+#courses{
+    background-color: #FBFEFF;
+    padding: 7% 0;
+}
+#courses .course-buttons{
+    margin: 3% 0;
+}
+#courses .course-buttons .btn-sm{
+    margin: 1% 0;
+}
+#courses  .h1-button{
+ text-align: center;   
+}
+#courses  .card{
+    background-color:#ffffff;
+    box-shadow:  -6px -6px 12px #c3c3c3,
+             6px 6px 12px #fdfdfd;
+}
+#courses  .card:hover{
+        box-shadow:  -6px -6px 12px #c3c3c3,
+             6px 6px 12px grey;
+             cursor: pointer;
+}
+#courses .courses-card .card-text{
+    padding-top: 4%;
+    color: #40394A;
+}
+#courses .courses-card button{
+    float: right;
+}
+#courses .course-center-column{
+    display: flex;
+    align-items: center;
+}
+#courses .course-right-column .col-lg-6{
+    padding: 2% 0;
+}
+/* hall of fame & avengers*/
+#hall-of-fame .card, #avengers .card{
+    background-color:#5E227F;
+    
+}
+#hall-of-fame .card:hover,#avengers .card:hover{
+     box-shadow:  -6px -6px 12px #000000,
+             6px 6px 12px #3E065F;
+}
+#avengers p{
+    text-align: center;
+}
+#hall-of-fame h1, #avengers h1{
+    text-align: center;
+}
+#hall-of-fame .hall-of-fame-image, #avengers .hall-of-fame-image{
+    border-radius: 50%;
+}
+#hall-of-fame img, #avengers img{
+    width: 40%;
+    margin: auto;
+    margin-top: 6%;
+   
+}
+ #avengers img{
+    background-color:#FFFA4D;
+ }
+#hall-of-fame h5,#avengers h5{
+    text-align: center;
+}
+#hall-of-fame .bi-linkedin, #avengers .bi-linkedin{
+    color: #0096FF;
+    margin:0 1%;
+}
+#avengers .bi-youtube{
+    color:#F90716;
+    font-size: 23px;
+    vertical-align: sub;
+}
+#hall-of-fame .margin-topp,#avengers .margin-topp{
+    margin-top: 3%;
+}
+#hall-of-fame .big-card,#avengers .big-card{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#hall-of-fame button{
+   position: absolute;
+   bottom: 10%;
+   right: 7%;
+}
+/* --------- */
+@media only screen and (max-width: 800px) {
+    
+.navbar .logo{
+    text-align: center;
+    width: 23%;
+}
+.total-students-card{
+    margin: 1% 0;
+}
+#achievers h1{
+    text-align: center;
+    margin-bottom: 10%;
+}
+#achievers .company-card{
+    margin: 4% 0;
+}
+
+#hall-of-fame .side-h1, #avengers .side-h1{
+    display: none;
+   }
+   #hall-of-fame .top-h1, #avengers .top-h1{
+    margin-bottom: 10%;
+   }
+   
+
+}
+@media only screen and (max-width: 500px){
+    #numbers-enrolled h1{
+    display: none;
+}
+#hall-of-fame .row-card, #avengers .row-card{
+    display: none;
+}
+#hall-of-fame .carosel p{
+text-align: center;
+}
+
+ #courses .courses-card .col-12{
+    display: flex;
+    justify-content: center;
+ }
+#courses .course-center-column {
+        padding: 0;
+}
+}
+@media only screen and (min-width: 800px) {
+   
+#achievers .companies-middle-row{
+margin: 3% 0;
+}
+#hall-of-fame .top-h1,#avengers .top-h1{
+        display: none;
+    }
+   
+}
+@media only screen and (min-width: 480px) {
+    #hall-of-fame .carosel,#avengers .carosel{
+        display: none;
+    }
+}
