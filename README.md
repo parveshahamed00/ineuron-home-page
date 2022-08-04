@@ -3,9 +3,9 @@
 
 This is my project designed for [FindCoder's Hackthon.](https://www.findcoder.io/)
 
-## Screenshot
+## GIF
 
-![App Screenshot](assets/Screenshot.png)
+![App Screenshot](gif/iNeuron-Home-Page-Google-Chrome.gif)
 
 [Live Demo](https://parveshahamed-ineuron-home-page.netlify.app/)
 >Tools used: HTML CSS Bootstrap for responsive design
