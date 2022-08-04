@@ -19,7 +19,7 @@ h1{
     background-color:#8E05C2 ;
 }
 .navbar .navbar-toggler{
-    border: 1.3px solid #371B58;
+    border: 1.3px solid #D9D7F1;
 }
 .navbar .logo{
     text-align: center;
@@ -129,18 +129,26 @@ font-family:Arial, Helvetica, sans-serif;
     align-items: flex-end;
     justify-content: center;
 }
-/* achievers */
-#achievers{
+/* achievers & hackthon*/
+#achievers, #hackthon{
     padding: 0 4%;
 }
 #achievers button{
     margin-top: 3%;
     float: right;
 }
-/* courses */
-#courses{
+ #hackthon button{
+        float: right;
+
+ }
+/* courses & products */
+#courses,#products{
     background-color: #FBFEFF;
-    padding: 7% 0;
+    padding: 5% 0;
+}
+#products .products-to-center{
+    display: flex;
+    align-items: center;
 }
 #courses .course-buttons{
     margin: 3% 0;
@@ -148,15 +156,18 @@ font-family:Arial, Helvetica, sans-serif;
 #courses .course-buttons .btn-sm{
     margin: 1% 0;
 }
-#courses  .h1-button{
+#courses  .h1-button,#products .h1-button{
  text-align: center;   
 }
-#courses  .card{
+#products .h1-button{
+    padding-top:10% ;
+}
+#courses  .card,#products .card{
     background-color:#ffffff;
     box-shadow:  -6px -6px 12px #c3c3c3,
              6px 6px 12px #fdfdfd;
 }
-#courses  .card:hover{
+#courses  .card:hover,#products .card:hover{
         box-shadow:  -6px -6px 12px #c3c3c3,
              6px 6px 12px grey;
              cursor: pointer;
@@ -168,11 +179,11 @@ font-family:Arial, Helvetica, sans-serif;
 #courses .courses-card button{
     float: right;
 }
-#courses .course-center-column{
+#courses .course-center-column,#products .course-center-column{
     display: flex;
     align-items: center;
 }
-#courses .course-right-column .col-lg-6{
+#courses .course-right-column .col-lg-6,#products .course-right-column .col-lg-6{
     padding: 2% 0;
 }
 /* hall of fame & avengers*/
@@ -226,22 +237,91 @@ font-family:Arial, Helvetica, sans-serif;
    position: absolute;
    bottom: 10%;
    right: 7%;
+
+}
+/* institutions */
+#institutions .col{
+   display: flex;
+   justify-content: center;
+}
+#institutions h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+#institutions{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer */
+#footer{
+    background-color:#700B97 ;
+     color:#F8F8F8;
+}
+#footer img{
+width: 26%;
+}
+#footer i{
+    color:#F8F8F8;
+}
+#footer .bi-facebook:hover, #footer .bi-linkedin:hover, #footer .bi-twitter:hover{
+    color: #1CC5DC;
+    cursor: pointer;
+}
+#footer .bi-youtube:hover{
+    color: red;
+    cursor: pointer;
+}
+#footer .social-medias{
+    display: flex;
+    justify-content: center;
+}
+#footer .social-medias h5{
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer .row .col-12{
+    padding: 5% 0;
+}
+#footer .head{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+#footer ul{
+    list-style: none;
+}
+#footer .subscribe label{
+    color: #3E065F;
+}
+#footer .image-and-address h5{
+    margin-top: 5%;
+}
+#footer .social-medias h5{
+    margin-top: 5%;
 }
 /* --------- */
 @media only screen and (max-width: 800px) {
-    
+    #products{
+        padding: 0;
+    }
+     #products .h1-button{
+        padding: 0;
+        margin-bottom: 6%;
+    }
 .navbar .logo{
     text-align: center;
-    width: 23%;
+    width: 15%;
 }
 .total-students-card{
     margin: 1% 0;
 }
-#achievers h1{
+#achievers h1, #hackthon h1{
     text-align: center;
     margin-bottom: 10%;
 }
-#achievers .company-card{
+#achievers .company-card, #hackthon .company-card{
     margin: 4% 0;
 }
 
@@ -251,13 +331,21 @@ font-family:Arial, Helvetica, sans-serif;
    #hall-of-fame .top-h1, #avengers .top-h1{
     margin-bottom: 10%;
    }
-   
+
 
 }
 @media only screen and (max-width: 500px){
+#footer{
+    padding: 7%;
+    
+}
+   #footer input{
+    width: 80%;
+   }
     #numbers-enrolled h1{
     display: none;
 }
+
 #hall-of-fame .row-card, #avengers .row-card{
     display: none;
 }
@@ -265,17 +353,30 @@ font-family:Arial, Helvetica, sans-serif;
 text-align: center;
 }
 
- #courses .courses-card .col-12{
+ #courses .courses-card .col-12, #products .courses-card .col-12{
     display: flex;
     justify-content: center;
  }
-#courses .course-center-column {
+#courses .course-center-column,#products .course-center-column  {
         padding: 0;
+}
+#institutions .card-last{
+    margin-top: 4%;
+}
+#footer .social-medias{
+    display: unset;
+}
+#footer .social-medias h5{
+    display: unset;
+    
+}
+#footer .social-medias h5 i{
+    margin: 0 2%;
 }
 }
 @media only screen and (min-width: 800px) {
    
-#achievers .companies-middle-row{
+#achievers .companies-middle-row,#hackthon .companies-middle-row{
 margin: 3% 0;
 }
 #hall-of-fame .top-h1,#avengers .top-h1{
