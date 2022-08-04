@@ -1,5 +1,5 @@
 
-# Street Style Landing Page
+# iNeuron Home Page
 
 This is my project designed for [FindCoder's Hackthon.](https://www.findcoder.io/)
 
